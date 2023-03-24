@@ -21,20 +21,16 @@ void PrintArray(int []array)
     Console.WriteLine();
 }
 
-string CheckA(int a, int [] array)
+bool CheckA(int a, int [] array)
 {
-    string temp = String.Empty;
+    bool temp = false;
 
     foreach (int i in array)
     {
         if (i == a)
         {
-            temp = "да";
+            temp = true;
             break;
-        }
-        else
-        {
-            temp = "нет";
         }
     }
     return temp;
