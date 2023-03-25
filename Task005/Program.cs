@@ -24,6 +24,7 @@ void PrintArray(int []array)
 int[] Multuplication(int [] array)
 {
     double size = Math.Ceiling(array.Length/2.0);
+     //int size = array.Length/2 + array.Length%2;
     int [] arr = new int[(int)size];
     for (int i = 0; i < array.Length/2; i++)
     {
